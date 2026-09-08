@@ -1,0 +1,1204 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <!-- meta character set -->
+        <meta charset="utf-8">
+		<!-- Always force latest IE rendering engine or request Chrome Frame -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Phuket Land Use Policy : การใช้ประโยชน์ที่ดินภูเก็ต</title>		
+		<!-- Meta Description -->
+        <meta name="description" content="ระบบตรวจสอบการใช้ประโยชน์ที่ดินภูเก็ต แผนที่ ผังเมืองรวม 2558 เทศบัญญัติผังเมืองป่าตอง กฎหมายควบคุมอาคาร กฎหมายสิ่งแวดล้อม  ประกาศพื้นที่ควบคุมสิ่งแวดล้อม">
+        <meta name="keywords" content="การใช้ประโยชน์ที่ดิน, การใช้ประโยชน์ที่ดินภูเก็ต, ตรวจสอบการใช้ประโยชน์ที่ดิน, 
+		การอนุรักษสิ่งแวดล้อม, บริการตรวจสอบการใช้ประโยชน์ที่ดิน, กรมโยธาธิการและผังเมือง, ผังเมืองรวมภูเก็ต 2558, ควบคุมอาคาร, ผังเมืองป่าตอง,  พื้นที่ควบคุมสิ่งแวดล้อม,
+		phuket land use policy, phuket smart city, Thailand 4.0, phuket land use regulations, land use law and regulation, phuket environment act, 
+		building control act, urban planning policy, land use zoning, environmental sustainability, land and property usage rights">
+        <meta name="author" content="GDEN">
+		
+		<!-- Mobile Specific Meta -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<!-- CSS
+		================================================== -->
+		
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+		<!-- Fontawesome Icon font -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- jquery.fancybox -->
+        <link rel="stylesheet" href="css/jquery.fancybox.css">
+		<!-- bootstrap.min -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- owl.carousel -->
+        <link rel="stylesheet" href="css/owl.carousel.css">
+		<!-- slit-slider -->
+        <link rel="stylesheet" href="css/slit-slider.css">
+		<!-- animate -->
+        <link rel="stylesheet" href="css/animate.css">
+        <!-- easy-autocomplete.min -->
+        <link rel="stylesheet" href="css/easy-autocomplete.min.css">
+        <!-- easy-autocomplete.themes.min -->
+        <link rel="stylesheet" href="css/easy-autocomplete.themes.min.css">
+		<!-- Main Stylesheet -->
+        <link rel="stylesheet" href="css/main.css?v=444">
+
+		<style type="text/css">
+			.map {
+			  cursor: crosshair;
+			  height: 700px;
+			  width: 100%;
+			  position: relative;
+			}
+			 
+			.home-button {
+			  top: 75px;
+			  left: .5em;
+			}
+			.ol-touch .home-button {
+			  top: 80px;
+			}		
+			
+			.map:-moz-full-screen {
+			  height: 100%;
+		    }
+		    .map:-webkit-full-screen {
+		  	height: 100%;
+		    }
+		    .map:-ms-fullscreen {
+		   	  height: 100%;
+		    }
+		    .map:fullscreen {
+		  	  height: 100%;
+		    }
+		    .ol-rotate {
+			  top: 3em;
+		    }
+			
+			#zoom-alert, #slope-alert, #public-area-alert, #submit-info {
+				width: 50%;
+				position: absolute;
+				left: 0; 
+				right: 0; 
+				margin-left: auto; 
+				margin-right: auto; 
+				top: 30px;
+				z-index: 10;
+				display: none;
+			}
+			
+			.fancybox-nav {
+			  display:none;
+			}
+			 
+			.table > tbody > tr > td {
+				padding: 4px;
+			}
+			
+			.table {
+				margin-bottom: 0px;
+			}
+			
+			.legend-table td {
+				font-size:15px; 
+			}
+			
+			/* custom panel from bootstarp */
+			.panel-primary {
+				border-color: #009ee3;
+			}
+			
+			.panel-primary > .panel-heading {
+				background-color: #009ee3;
+				border-color: #009ee3;
+				color: #fff;
+			}
+			
+			/* DivTable */
+			.divTable{
+				display: table;
+				width: 100%;
+			}
+			.divTableRow {
+				display: table-row;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+			}
+			.divTableCell, .divTableHead {
+				border: 0px;
+				display: table-cell;
+				padding: 5px 10px;
+			}
+			.divTableHeading {
+				background-color: #EEE;
+				display: table-header-group;
+				font-weight: bold;
+			}
+			.divTableFoot {
+				background-color: #EEE;
+				display: table-footer-group;
+				font-weight: bold;
+			}
+			.divTableBody {
+				display: table-row-group;
+			}
+			
+			.form-group {
+				margin-bottom: 5px;
+			}
+
+			.form-control {
+				height: 35px;
+			}
+			
+			.form-control-error {
+			  border-color: #FF0000;
+			  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+			}
+			
+			.grabbable {
+				cursor: move; /* fallback if grab cursor is unsupported */
+				cursor: grab;
+				cursor: -moz-grab;
+				cursor: -webkit-grab;
+			}
+
+			 /* (Optional) Apply a "closed-hand" cursor during drag operation. */
+			.grabbable:active { 
+				cursor: grabbing;
+				cursor: -moz-grabbing;
+				cursor: -webkit-grabbing;
+			}
+				
+			div #logo{
+				float:left;
+				margin-left: 10px;
+				margin-bottom: 5px;
+			}
+			img #ribbon{
+				margin-left: 20px;
+			}
+			img .logo{
+			    vertical-align: text-top;
+			}
+			
+			/* check box style*/
+			/* Hiding the checkbox, but allowing it to be focused */
+			.badgebox
+			{
+    			opacity: 0;
+			}
+
+			.badgebox + .badge
+			{
+    			/* Move the check mark away when unchecked */
+    			text-indent: -999999px;
+    			/* Makes the badge's width stay the same checked and unchecked */
+				width: 27px;
+			}
+
+			.badgebox:focus + .badge
+			{
+    			/* Set something to make the badge looks focused */
+    			/* This really depends on the application, in my case it was: */
+    
+    			/* Adding a light border */
+    			box-shadow: inset 0px 0px 5px;
+    			/* Taking the difference out of the padding */
+			}
+
+			.badgebox:checked + .badge
+			{
+    			/* Move the check mark back when checked */
+				text-indent: 0;
+			}
+		</style>
+		<link rel="stylesheet" href="https://openlayers.org/en/v5.3.0/css/ol.css" type="text/css">
+		<!-- The line below is only needed for old environments like Internet Explorer and Android 4.x -->
+		<script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=requestAnimationFrame,Element.prototype.classList,URL"></script>
+		<script src="https://openlayers.org/en/v5.3.0/build/ol.js"></script>
+		<!--<script src="ol.js"></script>-->
+		
+		<!-- Modernizer Script for old Browsers -->
+        <script src="js/modernizr-2.6.2.min.js"></script>
+		<!--<link rel="stylesheet" href="layout.css" type="text/css" />-->
+	
+  </head>
+  <body id="body">
+
+		<!-- preloader -->
+		<div id="preloader">
+            <div class="loder-box">
+            	<div class="battery"></div>
+            </div>
+		</div>
+		<!-- end preloader -->
+
+        <!--
+        Fixed Navigation
+        ==================================== -->
+        <header id="navigation" class="navbar-inverse navbar-fixed-top animated-header">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- responsive nav button -->
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+                    </button>
+					<!-- /responsive nav button -->
+					
+					<!-- logo -->
+					<div id="logo" vertical>
+						<img class="logo" src="img/ribbon_black.png" height="70px" width="70px" >
+						<a href="http://www.phuket.psu.ac.th" target="_blank"><img class="logo" src="img/logopsu.gif" height="70px" width="38px" ></a> 
+						<a href="http://http://www.tu.ac.th/" target="_blank"><img class="logo" src="img/logotu.png" height="70px" width="70px" ></a>
+					</div>
+					<h1 class="navbar-brand">
+						<a href="#body"><font style="text-transform: lowercase;">landusephuket.com</font></a>
+					</h1>
+					<!-- /logo -->
+                </div>
+
+				<!-- main nav -->
+                <nav class="collapse navbar-collapse navbar-right" role="navigation">
+                    <ul id="nav" class="nav navbar-nav">
+                        <li><a href="#body">หน้าหลัก</a></li>
+                        <li><a href="#service">บริการของเรา</a></li>
+                        <li><a href="#lu-acts">นโยบายและกฎหมาย</a></li>
+						<li><a href="#portfolio">งานศึกษาวิจัย</a></li>
+                        <li><a href="#contact">ติดต่อเรา</a></li>
+						<!-- <li>&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/ribbon.png" width="50px" height="50px" id="ribbon"></li> -->
+                    </ul>
+                </nav>
+				<!-- /main nav -->
+				
+            </div>
+        </header>
+        <!--
+        End Fixed Navigation
+        ==================================== -->
+		
+		<main class="site-content" role="main">
+		
+        <!--
+        Home Slider
+        ==================================== -->
+		
+		<section id="home-slider">
+            <div id="slider" class="sl-slider-wrapper">
+
+				<div class="sl-slider">
+					<!--
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+					-->
+					<div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+					
+						<div class="bg-img bg-img-1"></div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+                                <h2 class="animated fadeInDown">การใช้ประโยชน์ที่ดินในจังหวัดภูเก็ต</h2>
+                                <span class="animated fadeInDown">บริการตรวจสอบกฎหมายการใช้ประโยชน์ที่ดินบนพื้นที่ของท่าน</span>
+                                <a href="#service" class="btn btn-blue btn-effect"><span style="font-size:16px">ตรวจสอบ</span></a>
+                            </div>
+                        </div>
+						
+					</div>
+					
+					<div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+					
+						<div class="bg-img bg-img-2"></div>
+						<div class="slide-caption">
+                            <div class="caption-content">
+								<div class="content-box-1">
+                                <h2>กฎหมายการใช้ประโยชน์ที่ดินในจังหวัดภูเก็ต</h2>
+								<span style="font-size:20px">Phuket Land Use Laws and Regulations</span>
+								</div>
+                                <a href="#lu-acts" class="btn btn-blue btn-effect"><span style="font-size:16px">ศึกษากฎหมาย</span></a>
+								
+                            </div>
+                        </div>
+						
+					</div>
+				</div>
+				<!-- /sl-slider -->
+
+                <!-- 
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+                -->
+                
+                <nav id="nav-arrows" class="nav-arrows hidden-xs hidden-sm visible-md visible-lg">
+                    <a href="javascript:;" class="sl-prev">
+                        <i class="fa fa-angle-left fa-3x"></i>
+                    </a>
+                    <a href="javascript:;" class="sl-next">
+                        <i class="fa fa-angle-right fa-3x"></i>
+                    </a>
+                </nav> 
+
+				<nav id="nav-dots" class="nav-dots visible-xs visible-sm hidden-md hidden-lg">
+					<span class="nav-dot-current"></span>
+					<span></span>
+				</nav>
+				
+			</div><!-- /slider-wrapper -->
+		</section>
+		
+        <!--
+        End Home SliderEnd
+        ==================================== -->
+			
+			<!-- about section -->
+			<section id="about" >
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 wow animated fadeInLeft">
+							<div class="recent-works">
+								<h3>งานศึกษาวิจัยล่าสุด</h3>
+								<div id="works">
+									<div class="work-item">
+										<p>การทำแผนที่บริเวณตามข้อกำหนดในกฎหมายที่เกี่ยวกับการใช้ประโยชน์ที่ดินภาครัฐโดยประยุกต์ใช้เทคโนโลยี GIS และ Remote Sensing ทำให้ได้มาซึ่งแผนที่ประกอบการบังคับใช้กฎหมายที่อยู่ในรูปแบบ digital สามารถนำประยุกต์ใช้งานตามสภาพพื้นที่จริงได้อย่างมีประสิทธิภาพ<br> <br> โครงการบูรณาการข้อมูลด้าน GIS และ RS ที่เกี่ยวข้องกับนโยบายการใช้ประโยชน์ที่ดินภาครัฐในพื้นที่จังหวัดภูเก็ต จึงเป็นโครงการเร่งด่วนที่เรากำลังดำเนินการอยู่</p>
+									</div>
+									<div class="work-item">
+										<p>ปัญหาสำคัญในการบังคับใช้กฎหมายการใช้ประโยชน์ที่ดินของเจ้าหน้าที่รัฐในท้องที่ คือการตีความและการอ้างอิงกฎหมายที่เกี่ยวข้องหลายๆ ฉบับที่มีวัตถุประสงค์แตกต่างกัน ซึ่งยากต่อการปฏิบัติในการบังคับใช้กฎหมาย  <br><br> การศึกษา<u>ความไม่สอดคล้องกันในเชิงพื้นที่ และนิยามตามเนื้อหากฎหมาย</u>การใช้ประโยชน์ที่ดินภาครัฐ ในรูปแบบ content analysis และ matrix analysis จะสามารถระบุความไม่สอดคล้องกันของกฎหมายที่เกี่ยวข้องต่าง ๆ ได้ เพื่อการนำไปสู่การแก้ไขกฎระเบียบ และสร้างแนวปฏิบัติที่สามารถลดปัญหาการบังคับใช้กฎหมาย และความขัดแย้งในพื้นที่ได้อย่างมีประสิทธิภาพ</p>
+									</div>
+									<div class="work-item">
+										<p><u>One map solution</u> สำหรับการบูรณาการข้อมูลต่าง ๆ จากหน่วยงานภาครัฐ ที่จะเป็นประโยชน์ต่อการกำหนดนโยบาย การบริหารจัดการ และการแก้ไขปัญหาต่างๆ ของจังหวัดภูเก็ต ในลักษณะ smart governance จะสามารถสนับสนุนการเป็น smart city ของจังหวัดภูเก็ตตามนโยบาย Thailand 4.0 ของรัฐบาลได้เป็นอย่างดี <br><br> โครงการศึกษาความเป็นไปได้ และการพัฒนาระบบที่เรียกว่า <u>Smart Data Integration and Visualization for Decision Making</u>   ที่อยู่บน Cloud Platform สำหรับหน่วยงานภาครัฐและประชาชนทั่วไป จึงเป็นโครงการศึกษาวิจัยและพัฒนาที่เราต้องการทำให้เกิดขึ้นเพื่อสนับสนุนการพัฒนาจังหวัดภูเก็ตของเราอย่างยั่งยืน</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-md-offset-1 wow animated fadeInRight">
+							<div class="welcome-block">
+								<h3>ยินดีต้อนรับสู่เว็บไซต์ของเรา</h3>								
+						     	 <!--<div class="message-body">
+									<img src="img/peoples/aj_pun-150x150.jpg" class="pull-left" alt="รองศาสตราจารย์ ดร.พันธ์ ทองชุมนุม">
+						       		<p><i class="fa fa-quote-left" aria-hidden="true"></i> Website นี้เป็นความพยายามหนึ่งของคณะเทคโนโลยีและสิ่งแวดล้อม มหาวิทยาลัยสงขลานครินทร์ ซึ่งนำโดย ดร.แสงดาว วงค์สาย และทีมงาน ที่พยายามจะแก้ไขปัญหาการใช้ประโยชน์ที่ดินของจังหวัดภูเก็ตให้เป็นไปอย่างมีระบบและมีประสิทธิภาพ โดยการรวบรวมข้อมูลจากแหล่งต่าง ๆ มาผ่านกระบวนการศึกษาวิจัย ทำให้สามารถตอบโจทย์ในประเด็นปัญหาต่าง ๆ ที่เป็นปัญหามาก่อนหน้านี้ และจะเป็นแนวทางในการปฏิบัติงานสำหรับผู้เกี่ยวข้องโดยเฉพาะ ผู้บริหารที่สามารถนำไปใช้ประกอบในการตัดสินใจหรือกำหนดนโยบายต่าง ๆ <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
+									<p class="pull-right">รองศาสตราจารย์ ดร.พันธ์ ทองชุมนุม</p>
+								 </div>-->
+								 <div class="message-body">
+									<img src="img/peoples/aj_sangdao_small_2.jpg" class="pull-left" alt="ดร.แสงดาว วงค์สาย">
+						       		<p><i class="fa fa-quote-left" aria-hidden="true"></i> Website นี้เป็นส่วนหนึ่งของผลงานวิจัยเรื่องระบบบูรณาการฐานข้อมูลภาครัฐข้ามหน่วยงาน: ด้านกฎหมายและนโยบายการใช้ประโยชน์ที่ดิน ภายใต้แผนงานวิจัย Phuket Excellent Map มีวัตถุประสงค์เพื่อเพิ่มประสิทธิภาพและประสิทธิผลการบริหารจัดการข้อมูลภาครัฐเพื่อการให้บริการสาธารณะด้านกฎหมาย ข้อบังคับ และข้อกำหนดเกี่ยวกับนโยบายการใช้ประโยชน์ที่ดินจังหวัดภูเก็ต ภายใต้แนวคิดการใช้ทรัพยากรข้อมูลร่วมกันให้เกิดประโยชน์สูงสุดและการเลือกใช้เทคโนโลยีที่สามารถหาได้โดยประหยัดค่าใช้จ่าย ทีมนักวิจัยขอขอบคุณผู้เชี่ยวชาญ ผู้ทรงคุณวุฒิ และหน่วยงานต่าง ๆ ที่ให้การสนับสนุนงานวิจัยทั้งในด้านการสนับสนุนข้อมูล ทุนวิจัย และการให้ข้อเสนอแนะในการพัฒนาปรับปรุงงานวิจัยอย่างต่อเนื่องจนได้เป็น www.landusephuket.com ในปัจจุบัน และหวังเป็นอย่างยิ่งว่าผลผลิตและบริการที่เกิดขึ้นจากงานวิจัยในเฟสนี้ จะเป็นประโยชน์ต่อภาครัฐ ภาคเอกชน ภาควิชาการ ภาคสังคม และประชาชนทั่วไป ในขณะเดียวกันการให้ข้อมูลย้อนกลับ (feedback) ของท่าน จะเป็นประโยชน์ต่อการพัฒนาต่อยอดของเราเช่นกัน <i class="fa fa-quote-right" aria-hidden="true"></i> </p>
+									<p class="pull-right">ผู้ช่วยศาสตราจารย์ ดร.แสงดาว วงค์สาย (หัวหน้าโครงการ)</p>
+								 </div>
+								 <!--
+						       	<a href="#" class="btn btn-border btn-effect pull-right">Read More</a>
+								-->
+						    </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end about section -->
+			
+			<!-- sponsor section -->
+			<section id="sponsor">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown" style="margin-bottom:0px">
+							<h2>ผู้สนับสนุนงานวิจัย และรางวัล</h2>
+						</div>
+						
+						<div class="col-6 col-md-4 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div >
+								<a title="กองทุนวิจัยวิทยาเขต มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต" target="_blank" href="http://www.phuket.psu.ac.th/">	
+									<img src="img/logopsu.gif" height="150px" width="83px" >
+								</a>
+								<a title="กองทุนวิจัยวิทยาเขต มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต" target="_blank" href="http://www.phuket.psu.ac.th/">
+									<h3>กองทุนวิจัย ม.อ. วิทยาเขตภูเก็ต</h3>
+								</a>
+								<p>มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</p>							
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-4 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="กองทุนวิจัยคณะเทคโนโลยีและสิ่งแวดล้อม" target="_blank" href="https://te.psu.ac.th/">	
+									<img src="img/logo_TE.png" height="150px" width="104px" >
+								</a>
+								<a class="acts-fancybox" title="กองทุนวิจัยคณะเทคโนโลยีและสิ่งแวดล้อม" target="_blank" href="https://te.psu.ac.th/">	
+									<h3>กองทุนวิจัยคณะเทคโนโลยีและสิ่งแวดล้อม</h3>
+								</a>
+								<p>มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต</p>							
+							</div>
+						</div>
+						
+						<!--<div class="col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">-->
+						<div class="col-6 col-md-4 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="ภาควิชาคณิตศาสตร์และสถิต" target="_blank" href="http://math.sci.tu.ac.th/">	
+									<img src="img/logo_tu_math-stat.png" height="150px" >
+								</a>
+								<a class="acts-fancybox" title="คณะวิทยาศาสตร์และเทคโนโลย" target="_blank" href="http://www.sci.tu.ac.th/">	
+									<img src="img/logo_tu_sic.png" height="150px" >
+								</a>
+								<a class="acts-fancybox" title="ภาควิชาคณิตศาสตร์และสถิติ" target="_blank" href="http://math.sci.tu.ac.th/">	
+									<h3>ภาควิชาคณิตศาสตร์และสถิติ </h3>
+								</a>
+								<a class="acts-fancybox" title="คณะวิทยาศาสตร์และเทคโนโลยี" target="_blank" href="http://www.sci.tu.ac.th/">	
+									<h3>คณะวิทยาศาสตร์และเทคโนโลยี</h3>
+								</a>
+								<p>มหาวิทยาลัยธรรมศาสตร์</p>							
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="สำนักงานคณะกรรมการวิจัยแห่งชาติ (วช.)" target="_blank" href="http://www.nrct.go.th/">	
+									<img src="img/logo_NRCT.jpg" height="150px" >
+								</a>
+								<a class="acts-fancybox" title="สำนักงานคณะกรรมการวิจัยแห่งชาติ (วช.)" target="_blank" href="http://www.nrct.go.th/">	
+									<h3>สำนักงานคณะกรรมการวิจัยแห่งชาติ (วช.)</h3>
+								</a>
+								<p>National Research Council of Thailand (NRCT)</p>							
+							</div>
+						</div>
+						
+						<div class="col-6 col-md-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="สำนักงานนวัตกรรมแห่งชาติ" target="_blank" href="http://www.nia.or.th/nia/en/home/">	
+									<img src="img/logo_NIA2.png" height="150px" >
+								</a>
+								<a class="acts-fancybox" title="สำนักงานนวัตกรรมแห่งชาติ" target="_blank" href="http://www.nia.or.th/nia/en/home/">	
+									<h3>สำนักงานนวัตกรรมแห่งชาติ</h3>
+								</a>
+								<p>National Innovation Agency (Public Organization)</p>							
+							</div>
+						</div>
+						
+						
+						<div class=" col-6 col-md-6 col-xs12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="รางวัลผลงานประดิษฐ์คิดค้น" target="_blank" href="http://inventorday.nrct.go.th/">	
+									<img src="img/logo_inventor.jpg" height="150px" >
+								</a>
+								<a class="acts-fancybox" title="รางวัลสภาวิจัยแห่งชาติ" target="_blank" href="http://inventorday.nrct.go.th/">	
+									<h3>รางวัลสภาวิจัยแห่งชาติ</h3>
+								</a>
+								<a class="acts-fancybox" title="รางวัลผลงานประดิษฐ์คิดค้น ปี 2561" target="_blank" href="http://inventorday.nrct.go.th/">	
+									<h3>รางวัลผลงานประดิษฐ์คิดค้น ปี 2561</h3>
+								</a>
+								<p>สาขาเทคโนโลยีสารสนเทศและนิเทศศาสตร์</p>							
+							</div>
+						</div>
+						
+						<div class=" col-6 col-md-6 col-xs12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="รางวัลนวัตกรรมแห่งชาติ" target="_blank" href="http://award.nia.or.th/th">	
+									<img src="img/logo_NIA.png" height="150px" >
+								</a>
+								<a class="acts-fancybox" title="รางวัลนวัตกรรมแห่งชาติ ปี 2561" target="_blank" href="http://award.nia.or.th/th/award-winner">	
+									<h3>รางวัลนวัตกรรมแห่งชาติ ปี 2561</h3>
+								</a>
+								<a class="acts-fancybox" title="National Innovation Awards" target="_blank" href="http://award.nia.or.th/en">	
+									<h3>National Innovation Awards</h3>
+								</a>
+								<p>นวัตกรรมเพื่อสังคม</p>							
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end sponsor section -->
+			
+			<!-- Service section -->
+			<section id="service">
+				<div class="container">
+					<div class="row">
+					
+						<div id="map-title" class="sec-title text-center">
+							<h2 class="wow animated bounceInLeft">บริการ</h2>
+							<p class="wow animated bounceInRight"><h3>ตรวจสอบพื้นที่ของท่านตามกฎหมายการใช้ประโยชน์ที่ดิน</h3></p>
+						</div>
+						
+						<!-- map -->
+						<ul class="project-wrapper wow animated fadeInUp" >
+
+							<li class="map-item">
+							
+								<div id="show-law-map" class="btn-group" role="group">
+									<button type="button" class="btn btn-success dropdown-toggle" style="font-size: 15px;" data-toggle="dropdown" aria-expanded="false">
+									  แสดงแผนที่กฎหมาย <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu" style="font-size: 15px;">
+									  <li class="dropdown-header">แผนที่กฎหมาย</li>
+									  <li><a href="javascript:changeLawMap('envi');">ประกาศสิ่งแวดล้อม (พ.ศ. ๒๕๖๐)</a></li>
+									  <li><a href="javascript:changeLawMap('bc15');">กฎหมายควบคุมอาคาร ฉบับที่ ๑๕ (พ.ศ. ๒๕๒๙)</a></li>
+									  <li><a href="javascript:changeLawMap('bc20');">กฎหมายควบคุมอาคาร ฉบับที่ ๒๐ (พ.ศ. ๒๕๓๒)</a></li>
+									  <li><a href="javascript:changeLawMap('cp');">กฎหมายผังเมือง ฉบับที่ ๔ (พ.ศ. ๒๕๕๘)</a></li>
+									  <li><a href="javascript:changeLawMap('patong');">เทศบัญญัติ เทศบาลเมืองป่าตอง</a></li>
+									  <li class="dropdown-header">แผนที่ประกอบ</li>
+									  <li><a href="javascript:changeLawMap('boundary');">เขตการปกครอง - พื้นที่สาธารณะ</a></li>
+									  <li><a href="javascript:changeLawMap('slope');">ความลาดชันของพื้นที่ (อัตราร้อยละ)</a></li>
+									</ul>
+								</div>
+		
+								<div id="show-based-map" class="btn-group" role="group">
+									<button type="button" class="btn btn-info dropdown-toggle" style="font-size: 15px;" data-toggle="dropdown" aria-expanded="false">
+									  แสดงแผนที่ฐาน <span class="caret"></span>
+									</button>
+									<ul class="dropdown-menu" role="menu" style="font-size: 15px;">
+									  <li><a href="javascript:changeBasedMap('hybrid');">ภาพถ่ายทางอากาศ</a></li>
+									  <li><a href="javascript:changeBasedMap('road');">แผนที่ถนน</a></li>
+									</ul>
+								</div>
+								<div id="show-parcel" class="btn-group" role="group" >
+        							<label for="warning" class="btn btn-warning" style="font-size: 15px;">แสดงแปลงที่ดิน <input type="checkbox" id="warning" class="badgebox"><span class="badge">&check;</span></label>
+								</div>
+
+								<div id="map" class="map">
+									<!-- alert box -->
+									<div id="zoom-alert" class="alert alert-danger" role="alert">
+										เพื่อความถูกต้องในการตรวจสอบ <strong>กรุณาขยายแผนที่</strong> แล้วเลือกพื้นที่ใหม่ 
+									</div>
+									<div id="public-area-alert" class="alert alert-danger" role="alert">
+										พื้นที่ที่คุณเลือกเป็น <strong>พื้นที่สาธารณะ</strong> กรุณาเลือกพื้นที่ใหม่
+									</div>
+									<div id="slope-alert" class="alert alert-danger" role="alert">
+										 <strong>กรุณาขยายแผนที่</strong> เพื่อแสดงความลาดชันพื้นที่
+									</div>
+								</div>
+								<!-- Google Map-OpenLayer3 -->
+								<!-- local key -->
+								<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCur6MaPaTB5QKXNdN7N4JFJZoCBko9FC4"></script>
+								
+								<script src="ol3-google-maps/ol3gm.js"></script>
+								<link rel="stylesheet" href="ol3-google-maps/ol3gm.css" type="text/css" />
+							</li>
+							
+													<li class="legend-item" id="legend-container">
+								<div id="legend-phuket" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">จังหวัดภูเก็ต</div>
+										<div class="panel-body table-responsive">
+											<table class="table table-hover legend-table">
+												<tr><td><img src="map/img/public/boundary.png" height="15px" width="30px"></td><td class="text-left">เส้นขอบเขตการปกครอง</td></tr>
+												<tr><td><img src="map/img/public/water.png" height="15px" width="30px"></td><td class="text-left">แหล่งน้ำสาธารณะ</td></tr>
+												<tr><td><img src="map/img/public/power_line.png" height="15px" width="30px"></td><td class="text-left">แนวสายส่งไฟฟ้าแรงสูง กฟผ</td></tr>
+												<tr><td><img src="map/img/public/road.png" height="15px" width="30px"></td><td class="text-left">ถนนสาธารณะ</td></tr>
+											</table>
+										</div>
+										<div class="panel-footer" style="font-size: 14px">
+											<p class="text-left"><b>จังหวัดภูเก็ต</b> มีลักษณะเป็นเกาะซึ่งมีขนาดใหญ่ที่สุดของประเทศไทยมีพื้นที่ทั้งหมดประมาณ 570.034 ตารางกิโลเมตร ที่เหลือนั้นเป็นพื้นที่ของเกาะภูเก็ตอยู่ห่างจากกรุงเทพฯ 867 กิโลเมตร</p>
+											<br>
+											<p class="text-left"><b>จังหวัดภูเก็ต</b> แบ่งการบริหารราชการส่วนภูมิภาค ออกเป็น 3 อำเภอ คือ <b>อำเภอเมืองภูเก็ต อำเภอกะทู้ อำเภอถลาง </b> ประกอบด้วย13 ตำบล และ 96 หมู่บ้าน  <br>
+											การบริหารราชการส่วนท้องถิ่น ประกอบด้วย องค์การบริหารส่วนจังหวัด 1 แห่ง เทศบาล 12 แห่ง และองค์การบริหารส่วนตำบลอีก 6 แห่ง</p>
+										</div>
+									</div>
+								</div>
+								<div id="legend-slope" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">ความลาดชันของพื้นที่ (อัตราร้อยละ)</div>
+										<div class="panel-body table-responsive">
+											<table class="table table-hover legend-table">
+												<tr><td><img src="map/img/slope/zone_1.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑ : พื้นที่ที่มีความชันระหว่างอัตราร้อยละ ๒๐ ถึง ๓๕ เมตร</td></tr>
+												<tr><td><img src="map/img/slope/zone_2.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๒ : พื้นที่ที่มีความชันมากกว่าอัตราร้อยละ ๓๕ เมตร</td></tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="legend-act-envi" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">ประกาศสิ่งแวดล้อม (พ.ศ. ๒๕๖๐)</div>
+										<div class="panel-body table-responsive">
+											<table class="table table-hover legend-table">
+												<tr><td><img src="map/img/envi/zone_1.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑ : พื้นที่ที่วัดจากแนวชายฝั่งทะเลรอบเกาะภูเก็ตเข้าไปในแผ่นดินเป็นระยะ ๕๐ เมตร</td></tr>
+												<tr><td><img src="map/img/envi/zone_2.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๒ : พื้นที่ที่วัดจากแนวเขตบริเวณที่ ๑ เข้าไปในแผ่นดินเป็นระยะ ๑๕๐ เมตร</td></tr>
+												<tr><td><img src="map/img/envi/zone_3.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๓ : พื้นที่ที่วัดจากแนวเขตบริเวณที่ ๒ เข้าไปในแผ่นดินเป็นระยะ ๒๐๐ เมตร</td></tr>
+												<tr><td><img src="map/img/envi/zone_4.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๔ : พื้นที่ในเขตเทศบาลนครภูเก็ต</td></tr>
+												<tr><td><img src="map/img/envi/zone_5.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๕ : พื้นที่ดินประเภทชนบทและเกษตรกรรม</td></tr>
+												<tr><td><img src="map/img/envi/zone_6.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๖ : พื้นที่ที่มีความสูงจากระดับน้ำทะเลปานกลางตั้งแต่ ๔๐ - ๘๐ เมตร</td></tr>
+												<tr><td><img src="map/img/envi/zone_7.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๗ : พื้นที่ที่มีความสูงจากระดับน้ำทะเลปานกลางเกินกว่า ๘๐ เมตร ขึ้นไป</td></tr>
+												<tr><td><img src="map/img/envi/zone_8.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๘ : พื้นที่ในเกาะภูเก็ตและเกาะต่าง ๆ นอกจากบริเวณที่ ๑ ถึง บริเวณที่ ๗</td></tr>
+												<tr><td><img src="map/img/envi/zone_9.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๙ : พื้นที่น่านน้ำทะเลภายในเขตจังหวัดภูเก็ต</td></tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="legend-act-bc15" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">กฎหมายควบคุมอาคาร ฉบับที่ ๑๕ (พ.ศ. ๒๕๒๙)</div>
+										<div class="panel-body table-responsive">
+											<table class="table table-hover legend-table">
+												<tr><td><img src="map/img/building/zone_1.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑ : พื้นที่ในบริเวณที่เริ่มจากแนวเขตควบคุมอาคารตะวันตก ไปทางทิศตะวันออกข้ามถนนป่าตอง-กมลา ถนนทวีวงศ์ และถนนเลียบริมหาดป่าตองจนถึงระยะที่ห่างจากแนวศูนย์กลางถนนป่าตอง-กมลา ถนนทวีวงศ์ และถนนเลียบริมหาดป่าตอง
+												 ๑๕ เมตร ไปทางทิศเหนือจดเขตตำบลกมลา ไปทางทิศใต้จนจดบริเวณที่ห่างจากกึ่งกลางคลองปากบางไปทางทิศใต้ตามแนวถนนเลียบริมหาดป่าตองเป็นระยะ ๕๐๐ เมตร</td></tr>
+												<tr><td><img src="map/img/building/zone_4.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๒ : พื้นที่ที่วัดจากแนวศูนย์กลางถนนราษฏรอุทิศ ถนนสองร้อยปี และถนนทุกสายที่เชื่อมระหว่างถนนทวีวงค์กับถนนราษฏรอุทิศ และถนนสองร้อยปี ออกไปทั้งสองข้าง ข้างละ ๑๕ เมตร</td></tr>
+												<tr><td><img src="map/img/building/zone_2.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๓ : พื้นที่ที่วัดจากสุดแนวเขตบริเวณที่ ๑ ตลอดแนวไปทางทิศตะวันออกเป็นระยะ ๑๕๐ เมตร</td></tr>
+												<tr><td><img src="map/img/building/zone_3.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๔ : พื้นที่ในบริเวณระว่างบริเวณที่ ๒ กับบริเวณที่ ๓ และพื้นที่ในบริเวณที่วัดจากสุดแนวเขตบริเวณที่ ๒ ไปทางทิศเหนือและทิศใต้ ตลอดแนวบริเวณที่ ๓ กว้าง ๑๕๐ เมตร </td></tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="legend-act-bc20" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">กฎหมายควบคุมอาคาร ฉบับที่ ๒๐ (พ.ศ. ๒๕๓๒)</div>
+										<div class="panel-body table-responsive">
+											<table class="table table-hover legend-table">
+												<tr><td><img src="map/img/building/zone_1.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑ : พื้นที่วัดจากแนวชายฝั่งตะวันตกของเกาะภูเก็ตลงไปในทะเล ๑๐๐ เมตร และวัดจากแนวชายฝั่งเข้าไปในแผ่นดินเป็นระยะ ๕๐ เมตร ยกเว้นพื้นที่ตามกฎหมายควบคุมอาคาร ฉบับที่ ๑๕ (พ.ศ. ๒๕๒๙)</td></tr>
+												<tr><td><img src="map/img/building/zone_2.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๒ : พื้นที่ที่วัดจากแนวเขตบริเวณที่ ๑ เข้าไปในแผ่นดิน เป็นระยะ ๑๕๐ เมตร</td></tr>
+												<tr><td><img src="map/img/building/zone_3.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๓ : พื้นที่ที่วัดจากแนวเขตบริเวณที่ ๒เข้าไปในแผ่นดินเป็นระยะ ๓๐๐ เมตร</td></tr>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div id="legend-act-cp" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">กฎหมายผังเมือง ฉบับที่ ๔ (พ.ศ. ๒๕๕๘)</div>
+										<div class="panel-body ">
+										<div class="table-responsive">
+											<table class="table table-hover legend-table">
+												<tr><td><img src="map/img/city_plan/zone_1.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑ : ที่ดินประเภทที่อยู่อาศัยหนาแน่นน้อย</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_2.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๒ : ที่ดินประเภทที่อยู่อาศัยหนาแน่นปานกลาง</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_3.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๓ : ที่ดินประเภทพาณิชยกรรมและที่อยู่อาศัยหนาแน่นมาก</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_4.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๔ : ที่ดินประเภทอุตสาหกรรมและคลังสินค้า</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_5.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๕ : ที่ดินประเภทอุตสาหกรรมเฉพาะกิจ </td></tr>
+												<tr><td><img src="map/img/city_plan/zone_6.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๖ : ที่ดินประเภทชนบทและเกษตรกรรม</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_7.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๗ : ที่ดินประเภทที่โล่งเพื่อการรักษาคุณภาพสิ่งแวดล้อม</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_8.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๘ : ที่ดินประเภทอนุรักษ์ป่าไม้</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_9.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๙ : ที่ดินประเภทสถาบันการศึกษา</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_10.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๐ : ที่ดินประเภทที่โล่งเพื่อการรักษาคุณภาพการท่องเที่ยวและการประมง</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_11.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๑ : ที่ดินประเภทที่โล่งเพื่อนันทนาการและการรักษาคุณภาพสิ่งแวดล้อมชายฝั่งทะเล</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_12.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๒ : ที่ดินประเภทอนุรักษ์ทรัพยากรธรรมชาติและการรักษาคุณภาพสิ่งแวดล้อมชายฝั่งทะเล</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_13.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๓ : ที่ดินประเภทอนุรักษ์เพื่อส่งเสริมเอกลักษณ์ศิลปวัฒนธรรมไทย</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_14.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๔ : ที่ดินประเภทสถาบันศาสนา</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_15.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๕ : ที่ดินประเภทสถาบันราชการ</td></tr>
+												<tr><td><img src="map/img/city_plan/zone_16.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑๖ : ที่ดินประเภทโครงการคมนาคมและขนส่ง</td></tr>
+											</table>
+										</div>
+										</div>
+									</div>
+								</div>
+								<div id="legend-act-patong" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">เทศบัญญัติ เทศบาลเมืองป่าตอง (พ.ศ. ๒๕๔๘)</div>
+											<div class="panel-body table-responsive">
+												<table class="table table-hover legend-table">
+													<tr><td><img src="map/img/building/zone_2.png" height="15px" width="30px"></td><td class="text-left">บริเวณที่ ๑ : พื้นที่ในบริเวณเทศบาลเมืองป่าตอง เว้นแต่พื้นที่บริเวณที่ ๒ และพื้นที่ตามกฎหมายควบคุมอาคาร ฉบับที่ ๑๕ (พ.ศ. ๒๕๒๙) และ ฉบับที่ ๒๐ (พ.ศ. ๒๕๓๒)</td></tr>
+													<tr><td><img src="map/img/building/zone_1.png" height="15px" width="30px"></td>
+													<td class="text-left">บริเวณที่ ๒ : 
+														<dd><b>ทิศเหนือ: </b>จุดที่บรรจบเขตถนนราษฎร์อุทิศ ๒๐๐ ปีฟากตะวันออก กับเขตทางหลวงแผ่นดินหมายเลข ๔๐๒๙ ฟากใต้ ไปทางทิศตะวันออกจดเขตถนนผังเมืองสาย ก ฟากตะวันตก
+																และจุดที่บรรจบเขตถนนผังเมืองสาย ก กับเขตถนนไสน้ำเย็นฟากใต้ไปทางทิศตะวันออกจดเขตถนนนาในฟากตะวันตก</dd>
+														<dd><b>ทิศตะวันออก: </b>จดเขตถนนนาในฟากตะวันตก</dd>
+														<dd><b>ทิศใต้: </b>จุดที่บรรจบเขตถนนราษฎร์อุทิศ ๒๐๐ ปีฟากตะวันออก กับเขตถนนประชานุเคราะห์ ฟากเหนือไปทางทิศตะวันออกจดเขตถนนนาในฟากตะวันตก</dd>
+														<dd><b>ทิศตะวันตก: </b>จดเขตถนนราษฎร์อุทิศ ๒๐๐ ปีฟากตะวันออก</dd>
+														<br>
+														<b>ทั้งนี้ ไม่รวมถึงสถานที่ราชการ สถาบันการศึกษา ศาสนสถาน และที่สาธารณประโยชน์</b>
+													</td></tr>
+												</table>
+											</div>
+										</div>
+									</div>
+								<div>
+								<div id="legend-validate" class="legend-box">
+									<div class="panel panel-primary">
+										<div class="panel-heading">กรุณาเลือกประเภทสิ่งปลูกสร้าง</div>
+											<div class="panel-body table-responsive">
+											<ul class="nav nav-tabs" role="tablist" id="building-select-tab">
+                                        		<li role="presentation" class="active"><a href="#home" data-id="1" aria-controls="home" role="tab" data-toggle="tab">กลุ่ม/ประเภท</a></li>
+                                        		<li role="presentation"><a href="#quick" data-id="2" aria-controls="quick" role="tab" data-toggle="tab">ตรวจสอบบ่อย</a></li>
+                                        		<li role="presentation"><a href="#search" data-id="3" aria-controls="search" role="tab" data-toggle="tab">ค้นหา</a></li>
+                                        	</ul>
+
+                                    		<!-- Tab panes -->
+                                    		<div class="tab-content">
+                                        		<div role="tabpanel" class="tab-pane active" id="home">
+                                        			<div class="divTable">
+														<div class="divTableBody">
+															<div class="divTableRow">
+																<div class="divTableCell text-left" style="width: 25px">กลุ่ม: </div>
+																<div class="divTableCell text-left">
+																<div class="form-group">
+															  		<select id="category-index" class="form-control">
+																		<option value="-" selected>- สิ่งปลูกสร้างตามกลุ่ม -</option>
+																		<option value="B">อาคารพาณิชย์</option>
+																		<option value="L">อาคารที่อยู่อาศัย</option>
+																		<option value="P">อาคารสาธารณะ</option>
+																		<option value="F">โรงงาน</option>
+																		<option value="I">โครงสร้างพื้นฐาน</option>
+																		<option value="G">สถานที่เกี่ยวกับน้ำมันเชื้อเพลิงและก๊าซ</option>
+															  		</select>
+																</div>
+															</div>
+														</div>
+															<div class="divTableRow">
+															<div class="divTableCell text-left">ประเภท: </div>
+															<div class="divTableCell text-left">
+																<div class="form-group">
+															  	<select id="group-index" class="form-control" disabled>
+																	<option value="-" selected>- สิ่งปลูกสร้างตามประเภท -</option>
+															  	</select>
+																</div>
+															</div>
+														</div>
+															<div class="divTableRow">
+															<div class="divTableCell text-left">กิจการ: </div>
+															<div class="divTableCell text-left">
+																<div class="form-group">
+															  	<select id="oper-prod-index" class="form-control" disabled>
+																	<option value="-" selected>- กิจการ หรือการดำเนินงาน -</option>
+															  	</select>
+																</div>
+															</div>
+														</div>
+													</div>
+													</div>
+                                        		</div>
+                                        		<div role="tabpanel" class="tab-pane" id="quick">
+                                        			<div class="text-left" style="margin-top: 10px; margin-left: 30px">10 สิ่งปลูกสร้างที่มีการตรวจสอบมากที่สุด</div> 
+													<div class="text-left" style="margin-left: 30px" id="index10-list"><!-- fill radio using jquery --></div>
+													
+                                        		</div>
+                                        		<div role="tabpanel" class="tab-pane" id="search">
+                                        			<br/>
+                                        			<div class="col-sm-10">
+                                        				<input id="building-index" placeholder="สิ่งปลูกสร้าง" value=""/>
+                                        			</div>
+                                        			<div style="height:120px"></div>
+                                        		</div>
+                                        	</div>
+												
+												<!--
+												<div id="validate-msg" style="display: none"><span style="color : red; font-weight:bold; font-size: 15px; margin: 10px 0px">กรุณาเลือกกิจการของสิ่งปลูกสร้าง</span></div>
+												-->
+												<button id="validate-btn" class="btn btn-success" type="button" style="font-size: 16px" >ตรวจสอบการใช้ประโยชน์ที่ดิน</button>
+												<!--<br>
+												<div>หรือ</div>
+												
+												<button id="validate-all-btn" class="btn btn-info" type="button" style="font-size: 16px;" >ตรวจสอบทั้งหมด</button>
+                                        		-->
+											</div>
+									</div>
+									<button type="button" id="back-to-map" class="btn btn-danger" style="font-size: 16px"> กลับไปเลือกพื้นที่ใหม่ </button>
+								</div>
+								</div>
+								<br>
+								<button id="evaluation-btn" class="btn btn-warning" type="button" style="font-size: 16px" >แบบประเมินการให้บริการของเว็บไซต์</button>
+									
+							</li>
+							
+
+						</ul>					
+					</div>
+				</div>
+			</section>
+			<!-- end Service section -->
+			
+			<!-- acts section -->
+			<section id="lu-acts">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown" style="margin-bottom:0px">
+							<h2>นโยบาย และกฎหมายการใช้ประโยชน์ที่ดิน จังหวัดภูเก็ต</h2>
+						</div>
+						
+						
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="ประกาศสิ่งแวดล้อม(๒๕๖๐)" data-fancybox-group="works" href="acts/infographic/envi_2553.jpg">
+									<div class="lu-acts-icon"><i class="fa fa-envira fa-3x"></i></div>
+								</a>
+								<h3>ประกาศสิ่งแวดล้อม (๒๕๖๐)</h3>
+								<p>ประกาศกระทรวงทรัพยากรธรรมชาติและสิ่งแวดล้อม ในบริเวณพื้นที่จังหวัดภูเก็ต พ.ศ. ๒๕๖๐</p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.3s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="กฎหมายควบคุมอาคาร(๒๕๒๙)" data-fancybox-group="works" href="acts/infographic/bd20_2532.jpg">	
+									<div class="lu-acts-icon"><i class="fa fa-building fa-3x"></i></div>
+								</a>
+								<h3>กฎหมายควบคุมอาคาร (๒๕๒๙)</h3>
+								<p>กฎกระทรวง ฉบับที่ ๑๕ (พ.ศ. ๒๕๒๙) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. ๒๕๒๒</p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.6s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="กฎหมายควบคุมอาคาร(๒๕๓๒)" data-fancybox-group="works" href="acts/infographic/bd20_2532.jpg">	
+									<div class="lu-acts-icon"><i class="fa fa-home fa-3x"></i></div>
+								</a>
+								<h3>กฎหมายควบคุมอาคาร (๒๕๓๒)</h3>
+								<p>กฎกระทรวง ฉบับที่ ๒๐ (พ.ศ. ๒๕๓๒) ออกตามความในพระราชบัญญัติควบคุมอาคาร พ.ศ. ๒๕๒๒</p>
+							</div>
+						</div>
+					
+						<div class="col-md-3 col-sm-6 col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="กฎหมายผังเมืองรวม" data-fancybox-group="works" href="acts/infographic/cp_2558.jpg">
+									<div class="lu-acts-icon"><i class="fa fa-map fa-3x"></i></div>
+								</a>
+								<h3>กฎหมายผังเมืองรวม (๒๕๕๘)</h3>
+								<p>กฏกระทรวง  ให้ใช้บังคับผังเมืองรวมจังหวัดภูเก็ต พ.ศ. ๒๕๕๔ และ พ.ศ. ๒๕๕๘</p>							
+							</div>
+						</div>
+						
+						<div class="col-xs-12 text-center wow animated zoomIn" data-wow-delay="0.9s">
+							<div class="lu-acts-item">
+								<a class="acts-fancybox" title="เทศบัญญัติเทศบาลเมืองป่าตอง" data-fancybox-group="works" href="acts/infographic/patong.jpg">	
+									<div class="lu-acts-icon"><i class="fa fa-fire fa-3x"></i></div>
+								</a>
+								<h3>เทศบัญญัติเทศบาลเมืองป่าตอง (๒๕๔๘)</h3>
+								<p>กำหนดบริเวณห้ามก่อสร้าง ดัดแปลง หรือเปลี่ยนการใช้อาคารในพื้นที่เทศบาลเมืองป่าตอง พ.ศ. ๒๕๔๘</p>							
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end map section -->
+			
+			<!-- Testimonial section -->
+			<section id="testimonials" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+						
+							<div class="sec-title text-center white wow animated fadeInDown">
+								<h2>จากจุดเริ่ม จนถึงปัจุบัน</h2>
+							</div>
+							
+							<div id="testimonial" class=" wow animated fadeInUp">
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/somporn_small.jpg" alt="นายช่าง สมพร อ่อนทอง">
+									<div class="clearfix">
+										<span style="font-size:18px">นายช่าง สมพร อ่อนทอง <br/>(หัวหน้าฝ่ายออกแบบและควบคุมอาคาร กองช่าง อบต.ไม้ขาว)</span>
+										<p>ปี 2554 ผมเรียนปริญญาโทหลักสูตรการจัดการสิ่งแวดล้อม ที่คณะเทคโนโลยีและสิ่งแวดล้อม มอ. ภูเก็ต หัวข้อวิทยานิพนธ์ของผมเกี่ยวกับการใช้ประโยชน์ที่ดินบนพื้นที่ที่สูงกว่า 80 เมตรในพื้นที่ตำบลกมลา ซึ่งเป็นการศึกษาวิจัยที่เกี่ยวข้องกับงานในตำแหน่งหน้าที่ในขณะนั้นของผมโดยตรง เราสร้างแผนที่ตามข้อกำหนดในกฎหมายสิ่งแวดล้อม มาตรวจสอบการก่อสร้างอาคารในพื้นที่ ตอนนั้นยังเป็นระบบ offline อยู่ ซึ่งสามารถสนับสนุนการทำงานของ อบต.กมลา ในฐานะผู้บังคับใช้กฎหมายได้ระดับหนึ่งเลยที่เดียว</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/dithanan_small.jpg" alt="นายดิษฐนันท์ เส็นฤทธิ์">
+									<div class="clearfix">
+										<span style="font-size:18px">นายดิษฐนันท์ เส็นฤทธิ์ <br/> (นักวิชาการสิ่งแวดล้อม สำนักงานสิ่งแวดล้อมภาคที่ 15 ภูเก็ต)</span>
+										<p>ผมจบปริญญาตรีมาทาง IT แต่อยากศึกษาต่อทางด้านการจัดการสิ่งแวดล้อม ที่มีการประยุกต์ใช้งานด้านเทคโนโลยี GIS มาช่วยในการจัดการ ผมจึงได้นำความรู้ทางด้าน IT และ GIS มาประยุกต์และพัฒนาต่อยอดจากแนวคิดและงานวิจัยของรุ่นพี่ที่จบไป ให้ออกมาเป็นรูปแบบสารสนเทศบนเครือข่ายอินเตอร์เน็ต แต่เปลี่ยนพื้นที่มาเป็นตำบลเชิงทะเล และเพิ่มกฎหมายการใช้ประโยชน์ที่ดินฉบับอื่น ๆ เข้าไปในขอบเขตงานวิจัยของผม และงานที่ผมได้ทำไป ทำให้ผมจบปริญญาโท จากคณะเทคโนโลยีและสิ่งแวดล้อม มอ. ภูเก็ต ในปี 2556</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/jutaporn_samll.jpg" alt="นางสาวจุฑาพร เกษร">
+									<img src="img/peoples/adisorn_small.jpg" alt="นายอดิศร รัชนิพนธ์">
+									<div class="clearfix">
+										<span style="font-size:18px">นางสาวจุฑาพร เกษร และ นายอดิศร รัชนิพนธ์  <br/> (นักวิจัย คณะเทคโนโลยีและสิ่งแวดล้อม มอ.ภูเก็ต)</span>
+										<p>การใช้ประโยชน์ที่ดินในจังหวัดภูเก็ต ถือเป็นงานวิจัยหลัก ๆ ตามนโยบายขอคณะเทคโนโลยีและสิ่งแวดล้อม ทางคณะสนับสนุนให้เกิดการนำเอางานวิจัยของคณะไปใช้ประโยชน์ได้จริงในพื่นที่ เราจึงได้นำเอางานวิจัยที่มีอยู่มาพัฒนาให้มี scale ใหญ่ขึ้น ให้ครอบคลุมพื้นที่ทั้งจังหวัดภูเก็ต โดยได้นำเอาแผนที่แนบท้ายกฎหมายที่เกี่ยวข้องกับการใช้ประโยชน์ที่ดินมาเป็นจุดเริ่มในการพัฒนาระบบสารสนเทศ online ที่สามารถให้บริการตรวจสอบการใช้ประโยชน์ที่ดินตามกฎหมายการใช้ประโยชน์ที่ดินที่เกี่ยวข้อง</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/nopphatsorn_small.jpg" alt="นางสาวนพภัสสร วงศ์ชู">
+									<img src="img/peoples/pannipa_small.jpg" alt="นางสาวพรรณิภา สุวรรณ">
+									<img src="img/peoples/suparat_small.jpg" alt="นางสาวสุภารัตน์ พิใจดี">
+									<div class="clearfix">
+										<span style="font-size:18px">นางสาวนพภัสสร วงศ์ชู  นางสาวพรรณิภา สุวรรณ และ นางสาวสุภารัตน์ พิใจดี <br/>(บัณฑิต สาขาวิชาภูมิสารสนเทศสิ่งแวดล้อม คณะเทคโนโลยีและสิ่งแวดล้อม มอ.ภูเก็ต)</span>
+										<p>ตอนปี 4 พวกหนูโชคดีที่ได้ทำ senior project กับอาจารย์แสงดาว วงค์สาย ที่เกี่ยวกับการบูรณาการข้อมูลนโยบายและกฎหมายควบคุมการใช้ประโยชน์ที่ดินในรูปแบบ GIS โดยพวกหนูได้เลือกพื้นที่เขตเทศบาลเมืองป่าตองเป็นพื้นที่ศึกษา เนื่องจากมีเทศบัญญัติเทศบาลเมืองป่าตอง ปี 2548 บังคับใช้เฉพาะ ผลการศึกษาก่อให้เกิดองค์ความรู้ใหม่ ๆ เช่น ความขัดแย้งกันของกฎหมายควบคุมการใช้ประโยชน์ที่ดินภาครัฐ ที่บังคับใช้ในระดับประเทศ จังหวัด และท้องถิ่น ซึ่งเป็นประเด็นที่มีความน่าสนใจมากที่ทำให้พวกหนูได้รับรางวันชมเชยในการแข่งขันการนำเสนอผลงานวิชาการในการประชุมวิชาการนิสิตนักศึกษาภูมิศาสตร์และภูมิสารสนเทศศาสตร์แห่งประเทศไทย ครั้งที่ 8 ปี 2558 ที่ จุฬาลงกรณ์มหาวิทยาลัย</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/eakkachai_small.jpg" alt="นายเอกชัย กกแก้ว">
+									<img src="img/peoples/aj_noppachai_small.jpg" alt="อาจารย์ นพชัย วงค์สาย">
+									<div class="clearfix">
+										<span style="font-size:18px">นายเอกชัย กกแก้ว และ ดร.นพชัย วงค์สาย <br/>(นักศึกษาปริญาโท และอาจารย์คณะเทคโนโลยีและสิ่งแวดล้อม มอ.ภูเก็ต)</span>
+										<p>หลังจากระบบสารสนเทศ online ในเวอร์ชั่นแรกได้ให้บริการแก่ประชาชนโดยทั่วไป เราได้รับ feedback จากเจ้าหน้าที่ที่เกี่ยวข้องในพื้นที่ เกี่ยวกับความถูกต้องของการทำงานของระบบ และการตรวจสอบ เนื่องจากแผนที่แนบท้ายกฎหมายแต่ละฉบับถูกสร้างจากต่างหน่วยงานกัน ทำให้เกิดปัญหาการซ้อนทับกันของขอบเขต เราจึงได้ทำการปรับปรุงระบบตรวจสอบ โดยจัดทำแผนที่ตามข้อกำหนดของแต่ละกฎหมายขึ้นใหม่ เพื่อทำให้ขอบเขตของแต่ละบริเวณที่กฎหมายบังคับใช้ไม่เกิดการ overlap กัน และทำการวิเคราะห์เนื้อหากฎหมาย พร้อมกับจัดรูปแบบเนื้อหากฎหมายให้อยู่ในรูปฐานข้อมูลที่ง่ายต่อการตรวจสอบ</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/aj_pun-150x150.jpg" alt="รองศาสตราจารย์ ดร.พันธ์ ทองชุมนุม">
+									<div class="clearfix">
+										<span style="font-size:18px">รองศาสตราจารย์ ดร.พันธ์ ทองชุมนุม <br/>(รองอธิการบดี มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต)</span>
+										<p>www.landusephuket.com เป็นผลงานวิจัยที่เกิดจากการทำงานวิจัยอย่างต่อเนื่องของอาจารย์ ดร.แสงดาว วงค์สาย โดยมีวัตถุประสงค์เพื่อเพิ่มประสิทธิภาพการบริการสาธารณะ (public service) ด้านการใช้ประโยชน์ที่ดินของจังหวัดภูเก็ตให้เป็นไปอย่างมีระบบ โดยการรวบรวมข้อมูลจากแหล่งต่าง ๆ มาผ่านกระบวนการศึกษาวิจัย ทำให้สามารถตอบโจทย์ในประเด็นปัญหาต่าง ๆ ที่เป็นปัญหามาก่อนหน้านี้ และจะเป็นแนวทางในการปฏิบัติงานสำหรับผู้เกี่ยวข้องโดยเฉพาะ ผู้บริหารจะสามารถนำไปใช้ประกอบในการตัดสินใจหรือกำหนดนโยบายต่าง ๆ ได้</p>
+									</div>
+								</div>
+								<div class="testimonial-item text-center">
+									<img src="img/peoples/aj_supet_small.jpg" alt="รศ. ดร.แสงดาว วงค์สาย">
+									<img src="img/peoples/aj_sangdao_small_2.jpg" alt="ผศ. ดร.แสงดาว วงค์สาย">
+									<img src="img/peoples/aj_noppachai_small.jpg" alt="อาจารย์ นพชัย วงค์สาย">
+									<div class="clearfix">
+										<span style="font-size:18px">รศ.ดร.สุเพชร จิรขจรกุล ผศ.ดร.แสงดาว วงค์สาย และ ดร.นพชัย วงค์สาย<br/>(คณะทำงาน โครงการเผยแพร่นวัตกรรม)</span>
+										<p>หลังจาก www.landusephuket.com ได้รับรางวัลผลงานประดิษฐ์คิดค้น และ รางวัลนวัตกรรมแห่งชาติ ปี 2561 เราอยากเห็นการนำนวัตกรรมนี้ไปใช้งานเพื่อให้เกิดประโยชน์สูงสุดในท้องถิ่นและระดับประเทศ เราได้ทำการเผยแพร่ผลงานวิจัยและนวัตกรรมสิ่งประดิษฐ์นี้ให้กับเจ้าหน้าที่ภาครัฐที่เกี่ยวข้อง ภาคเอกชน และประชาชนในจังหวัดภูเก็ต ภายใต้ทุนสนับสนุนจากสำนักงานการวิจัยแห่งชาติ (วช.) และในปี 2562 เราได้รับทุนต่อเนื่องเพื่อเผยแพร่และผลักดันให้มีการนำผลงานวิจัยและเทคโนโลยีไปเป็นแนวทางในการจัดทำเป็นนโยบาย ยุทธศาสตร์และแผนพัฒนาใน 5 จังหวัดภาคตะวันออก </p>
+									</div>
+								</div>
+							</div>
+						
+						
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Testimonial section -->
+			
+			<!-- portfolio section -->
+			<section id="portfolio">
+				<div class="container">
+					<div class="row">
+					
+						<div class="sec-title text-center wow animated fadeInDown">
+							<h2>งานศึกษาวิจัยที่เกี่ยวข้อง</h2>
+							<p>ผลงานศึกษา และผลงานวิจัยเกี่ยวกับการใช้ประโยชน์ที่ดิน ที่ได้รับการเผยแพร่ในวารสารวิชาการ</p>
+						</div>
+
+						<ul class="project-wrapper wow animated fadeInUp">
+							<li class="portfolio-item">
+								<img src="img/portfolio/2018_structure.jpg" class="img-responsive" alt="2018_ข้อมูลเชิงโครงสร้างและเชิงพื้นที่ของกฎหมายควบคุมการใช้ประโยชน์ที่ดิน">
+								<figcaption class="mask">
+									<h3>2561</h3>
+									<p>ข้อมูลเชิงโครงสร้างและเชิงพื้นที่ของกฎหมายควบคุมการใช้ประโยชน์ที่ดิน และการพัฒนาโปรแกรมประยุกต์บนเว็บสำหรับตรวจสอบการใช้ประโยชน์ที่ดิน</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2018_Structure%20and%20Spatial%20Data%20of%20Land%20Use%20Regulations%20and%20Development%20of%20Web-Based%20Application%20for%20Land%20Use%20Verification.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							<li class="portfolio-item">
+								<img src="img/portfolio/2016_web_gis_law.jpg" class="img-responsive" alt="2016_การพัฒนาโปรแกรมประยุกต์บนเว็บสำหรับตรวจสอบการใช้ประโยชน์ที่ดินตามกฎหมายภาครัฐ">
+								<figcaption class="mask">
+									<h3>2559</h3>
+									<p>การพัฒนาโปรแกรมประยุกต์บนเว็บสำหรับตรวจสอบการใช้ประโยชน์ที่ดินตามกฎหมายภาครัฐ</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2016_Web-Based%20Application%20of%20Land%20Use%20Verification_Phuket%20Case%20Study.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2016_lc.jpg" class="img-responsive" alt="2016_การเปลี่ยนแปลงการใช้ที่ดินในพี้นที่จังหวัดสามเหลี่ยมอันดามัน ประเทศไทย">
+								<figcaption class="mask">
+									<h3>2559</h3>
+									<p>การเปลี่ยนแปลงการใช้ที่ดินในพี้นที่จังหวัดสามเหลี่ยมอันดามัน ประเทศไทย </p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2016_Land-use%20change%20in%20the%20Andaman%20Triangle%20provinces,%20Thailand.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2015_web_gis_tourism.jpg" class="img-responsive" alt="2015_Web application for GIS-based tourism data integration of Phuket province, Thailand">
+								<figcaption class="mask">
+									<h3>2558</h3>
+									<p>Web application for GIS-based tourism data integration of Phuket province, Thailand</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2016_Web%20application%20for%20GIS-based%20tourism%20data%20integration%20of%20Phuket%20province,%20Thailand.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2013_after_tsunami.jpg" class="img-responsive" alt="2013_Land use change after Tsunami, Cherng Talay Sub-distric, Thaland, Phuket, Thailand">
+								<figcaption class="mask">
+									<h3>2556</h3>
+									<p>Land use change after Tsunami, Cherng Talay Sub-distric, Thaland, Phuket, Thailand</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2013_Land%20use%20change%20after%20Tsunami%20Cherng%20Talay%20Sub-district%20%20Phuket%20Thailand.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2013_historiacal_lu.jpg" class="img-responsive" alt="2013_Historical land use and land cover changes, 1989-2011, in Phuket, Thailand">
+								<figcaption class="mask">
+									<h3>2556</h3>
+									<p>Historical land use and land cover changes, 1989-2011, in Phuket, Thailand</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2013_Historical%20land%20use%20and%20land%20cover%20changes,%201989-2011,%20in%20Phuket,%20Thailand.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2013_80m.jpg" class="img-responsive" alt="2013_No buildings on lands over 80 meters above sea level a case study of Kamala Phuket">
+								<figcaption class="mask">
+									<h3>2556</h3>
+									<p>No buildings on lands over 80 meters above sea level? - a case study of Kamala Phuket</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2013_No%20buildings%20on%20lands%20over%2080%20meters%20above%20sea%20level%20a%20case%20study%20of%20Kamala%20Phuket.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2013_oil_plam.jpg" class="img-responsive" alt="2013_Oil palm expansion in Amphoe Lam Thap, Krabi province, Thailand">
+								<figcaption class="mask">
+									<h3>2556</h3>
+									<p>Oil palm expansion in Amphoe Lam Thap, Krabi province, Thailand</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2013_Oil%20palm%20expansion%20in%20Amphoe%20Lam%20Thap,%20Krabi%20province,%20Thailand.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2012_rs_lc.jpg" class="img-responsive" alt="2012_Application of remote sensing for monitoring land cover and land use change in Phang-nga province, Thailand.">
+								<figcaption class="mask">
+									<h3>2555</h3>
+									<p>Application of remote sensing for monitoring land cover and land use change in Phang-nga province, Thailand</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2012_Application%20of%20remote%20sensing%20for%20monitoring%20land%20cover%20and%20land%20use%20change%20in%20Phang%20nga%20province%20Thailand.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2012_urban.jpg" class="img-responsive" alt="2012_Urban change monitoring and land use policy">
+								<figcaption class="mask">
+									<h3>2555</h3>
+									<p>Urban change monitoring and land use policy</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2012_Urban change monitoring and land use policies.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2012_oil_plam.jpg" class="img-responsive" alt="2012_Is oil palm agriculture expansion really restricted to pre-exising cropland?">
+								<figcaption class="mask">
+									<h3>2555</h3>
+									<p>Is oil palm agriculture expansion really restricted to pre-exising cropland?</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2012_Is oil palm agriculture expansion really restricted to pre existing cropland.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							<li class="portfolio-item">
+								<img src="img/portfolio/2012_lu_town_plan.jpg" class="img-responsive" alt="2012_Land use change and the town planning policy of Phuket">
+								<figcaption class="mask">
+									<h3>2555</h3>
+									<p>Land use change and the town planning policy of Phuket</p>
+								</figcaption>
+								<ul class="external" title="ดูเอกสารงานวิจัย">
+									<li><a href="img/portfolio/papers/2012_Land use change and the town planning policy of Phuket.pdf" target="_blank"><i class="fa fa-link"></i></a></li>
+								</ul>
+							</li>
+							
+							
+						</ul>
+						
+					</div>
+				</div>
+			</section>
+			<!-- end portfolio section -->
+
+			<!-- Contact section -->
+			<section id="contact" class="parallax">
+				<div class="overlay">
+					<div class="container">
+						<div class="row">
+							
+							<div class="sec-title text-center white wow animated bounceInLeft">
+								<h2>ติดต่อเรา</h2>
+								<p>ส่งข้อความ คำถาม หรือคำแนะนำ</p>
+							</div>
+							
+							<div class="col-md-7 contact-form wow animated fadeInLeft">
+								<form action="javascript:msgSubmit()" method="post">
+									<div class="input-field">
+										<input type="text" name="name" class="form-control" placeholder="ชื่อ - สกุล">
+									</div>
+									<div class="input-field">
+										<input type="email" name="email" class="form-control" placeholder="อีเมล์">
+									</div>
+									<div class="input-field">
+										<input type="text" name="subject" class="form-control" placeholder="หัวข้อเรื่อง">
+									</div>
+									<div class="input-field" style="position: relative;">
+										<textarea name="message" class="form-control" placeholder="ข้อความ"></textarea>
+										<div id="submit-info" class="alert alert-success" role="alert">
+											ระบบได้บันทึกข้อความของท่านเรียบร้อยแล้ว
+										</div>
+									</div>
+									<button type="submit" id="submit" class="btn btn-blue btn-effect msg-submit-icon">ส่งข้อความ  
+										&nbsp;&nbsp;&nbsp;<i class="fa fa-paper-plane fa-lg"></i>
+									</button>
+								</form>
+							</div>
+							
+							<div class="col-md-5 wow animated fadeInRight" >
+								<address class="contact-details">
+									<h3>ข้อมูลการติดต่อ</h3>						
+									<p><i class="fa fa-map-marker"></i> คณะเทคโนโลยีและสิ่งแวดล้อม 
+										<span>มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตภูเก็ต </span> 
+										<span>อำเภอกะทู้ จังหวัดภูเก็ต 83120</span>
+									</p>
+									<p><i class="fa fa-phone"></i>076 276118 ต่อ 6479</p>
+									<p><i class="fa fa-map-marker"></i> คณะวิทยาศาสตร์และเทคโนโลยี
+										<span>มหาวิทยาลัยธรรมศาสตร์ ศูนย์รังสิต</span> 
+										<span>อำเภอคลองหลวง จังหวัดปทุมธานี 12120</span>
+									</p>
+									<p><i class="fa fa-phone"></i>089 726 0200</p>
+									<p><i class="fa fa-envelope-o"></i>หัวหน้าโครงการ : sangdao.mathstat@gmail.com</p>
+									<p><i class="fa fa-envelope-o"></i>Web Admin : naong69@gmail.com</p>
+									<p><i class="fa fa-globe"></i>GDEN Research Group (<a href="http://rgden.com/" target="_blank">www.rgden.com</a>)</p>
+								</address>
+							</div>
+				
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- end Contact section -->
+			
+			<section id="google-map">
+				<div id="map-canvas" class="wow animated fadeInUp"></div>
+			</section>
+		
+		</main>
+		
+		<footer id="footer">
+			<div class="container">
+				<div class="row text-center">
+					<div class="footer-content">
+						<div class="footer-social">
+							<ul>
+								<li class="wow animated zoomIn"><a href="#"><i class="fa fa-thumbs-up fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.3s"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.6s"><a href="#"><i class="fa fa-skype fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="0.9s"><a href="#"><i class="fa fa-dribbble fa-2x"></i></a></li>
+								<li class="wow animated zoomIn" data-wow-delay="1.2s"><a href="#"><i class="fa fa-youtube fa-2x"></i></a></li>
+							</ul>
+						</div>
+						
+						<p>Copyright &copy; 2016 Developed By <a href="http://www.rgden.com" target="_blank">GDEN</a> <br />
+							Design By <a href="http://www.themefisher.com">Themefisher</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		<!-- Essential jQuery Plugins
+		================================================== -->
+		<!-- Main jQuery -->
+        <script src="js/jquery-1.11.1.min.js"></script>
+		<!-- EasyAutocomplete plugin -->
+        <script src="js/jquery.easy-autocomplete.min.js"></script>
+		<!-- Twitter Bootstrap -->
+        <script src="js/bootstrap.min.js"></script>
+		<!-- Single Page Nav -->
+        <script src="js/jquery.singlePageNav.min.js"></script>
+		<!-- jquery.fancybox.pack -->
+        <script src="js/jquery.fancybox.pack.js"></script>
+		<!-- Owl Carousel -->
+        <script src="js/owl.carousel.min.js"></script>
+        <!-- jquery easing -->
+        <script src="js/jquery.easing.min.js"></script>
+        <!-- Fullscreen slider -->
+        <script src="js/jquery.slitslider.js"></script>
+        <script src="js/jquery.ba-cond.min.js"></script>
+		<!-- onscroll animation -->
+        <script src="js/wow.min.js"></script>
+		<!-- Custom Functions -->
+        <script src="js/main.js?v=584"></script> 
+		<script src="js-map/map.js?v=ddss" id="map-js"></script>
+		<script>
+			var js_file = "js-map/map.js?v="+Math.random()
+			document.getElementById("map-js").src = js_file;
+		</script>
+  </body>
+</html>
